@@ -17,12 +17,22 @@
         return cb(data);
     }
     console.log(prepNumber("123.14",Math.floor));
-    //better test some of those functions from earlier:
+    // better test some of those functions from earlier:
     console.log(addTwo(2)); // 4
     console.log(makeSeven()); // 7
     console.log(sumTwoValues(11,8)); // 19
     console.log(makeSevenAgain()); // 7
     console.log(sumTwoValuesAgain(12,28)); // 40
     console.log(addTwoAgain(8)); // 10
-    //that should do it...
+    // that should do it...
+    // now it seems that we're talking about
+    //  whether functions are blocking or not.
+    // I'd better pay attention!
+    // hmmm, that was not as informative as I'd hoped...
+    var someArray = [1,2,3];
+    var oneUp = someArray.map(e=>e+1);
+    var doubleCopy = someArray.map(e=>e*2);
+    console.log(someArray);
+    console.log(oneUp);
+    console.log(doubleCopy);
 </script>
