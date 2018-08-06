@@ -1,0 +1,28 @@
+<script>
+    console.log("let's create some arrow functions");
+    var addTwo = (x) => x+2;
+    var makeSeven = ()=>7;
+    var sumTwoValues = (x,y)=>x+y;
+    var makeSevenAgain = ()=>{
+        return 7;
+    };
+    var sumTwoValuesAgain = (x,y)=>{
+        return x+y;
+    };
+    var addTwoAgain = x=>x+2;
+    function prepNumber(data,cb){
+        if (typeof data === 'string'){
+            data = Number(data);
+        }
+        return cb(data);
+    }
+    console.log(prepNumber("123.14",Math.floor));
+    //better test some of those functions from earlier:
+    console.log(addTwo(2)); // 4
+    console.log(makeSeven()); // 7
+    console.log(sumTwoValues(11,8)); // 19
+    console.log(makeSevenAgain()); // 7
+    console.log(sumTwoValuesAgain(12,28)); // 40
+    console.log(addTwoAgain(8)); // 10
+    //that should do it...
+</script>
